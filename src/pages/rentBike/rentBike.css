@@ -1,0 +1,113 @@
+ 
+ /* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #d90429;
+    --text-color: #020102;
+    --bg-color: #fff;
+}
+
+body {
+    background: linear-gradient(#cec4c2, #80b4cc);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+.heading {
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--main-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.heading p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgb(32, 27, 27);
+}
+
+
+/* Bikes Container */
+.bikes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 14rem;
+    padding: 0 1rem; /* Add padding for better layout on smaller screens */
+}
+
+.bikes-container .box {
+    flex: 1 1 40rem; /* Adjust flex-grow, shrink, and basis */
+    position: relative;
+    height: 500px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bikes-container .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bikes-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.bikes-container .box img:hover {
+    transform: scale(1.1);
+}
+
+.bikes-container .box h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    padding: 8px 12px;
+    border-radius: 0.5rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.bikes-container .box:hover h2 {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+.main-container{
+    margin-top: 100px;
+}
+/* Utility Classes */
+/* .mt-20 {
+    margin-top: 60px;
+} */

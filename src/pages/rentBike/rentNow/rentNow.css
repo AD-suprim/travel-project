@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /*background-image: url('./contactbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    font-family: 'outfit';
+    background: linear-gradient(#cec4c2,#80b4cc);
+}
+.rent-container{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rent-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.rent-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.rent-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.rent-inputs{
+    width: 500px;
+    height: 58px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+/*.rent-left textarea {
+    height: 140px;
+    width: 400px;
+    padding-top: 15px;
+    border-radius: 20px;
+}*/
+.rent-inputs:focus {
+    border: 2px solid #ff994F;
+}
+.rent-inputs::placeholder{
+    color: #a9a9a9;
+}
+.rent-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff994f,#fa6d86);
+    cursor: pointer;
+}
+.main-container{
+    margin-top: 110px;
+}
